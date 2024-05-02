@@ -3,10 +3,13 @@ package com.flight.bookings.util;
 import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.flight.bookings.entity.Passengers;
 import com.flight.bookings.service.PassengersService;
 
+@Component
 public class PassengersUtilImpl implements PassengersUtil{
 	@Autowired
 	private PassengersService passengersService;

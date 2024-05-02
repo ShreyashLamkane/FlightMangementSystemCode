@@ -19,10 +19,14 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.flight.details.entity.Flight;
 import com.flight.details.service.DetailsService;
+import com.flight.details.util.FlightDetailsUtil;
 
 @RestController
 @RequestMapping("/details")
 public class DetailsController {
+	
+	@Autowired
+	private FlightDetailsUtil flightDetailsUtil;
 	
 	@Autowired
 	private DetailsService detailsService;
@@ -30,7 +34,7 @@ public class DetailsController {
 	@PostMapping("/create")
 	public ResponseEntity<Flight> createFlight(@RequestBody Flight flight) {
 		System.out.println("Generated ID: " + flight.getFlightId());
-		return ResponseEntity.ok(detailsService.createFlight(flight));
+		return ResponseEntity.ok(flightDetailsUtil.createFlight(flight));
 		//return detailsService.createFlight(flight);
 	}
 	

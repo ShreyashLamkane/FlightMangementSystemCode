@@ -25,11 +25,7 @@ import com.flight.bookings.util.PassengersUtil;
 @RequestMapping("/bookings")
 public class BookingsController {
 	
-	@Autowired
-	private BookingsService bookingsService;
 	
-	@Autowired
-	private PassengersService passengersService;
 	
 	@Autowired
 	private BookingsUtil bookingsUtil;

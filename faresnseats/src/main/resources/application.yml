@@ -18,4 +18,4 @@ spring:
     import: configserver:http://localhost:8084/
     
   application:
-    name: FARE-SERVICE
+    name: SEATNFARE-SERVICE

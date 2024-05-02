@@ -25,6 +25,11 @@ spring:
           uri: lb://SEARCH-SERVICE
           predicates:
             - Path=/search/**  
+            
+        - id: SEATNFARE-SERVICE
+          uri: lb://SEATNFARE-SERVICE
+          predicates:
+            - Path=/seats/**  
   config:
      import: configserver:http://localhost:8084/
     

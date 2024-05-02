@@ -3,6 +3,8 @@ package com.flight.bookings.util;
 import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import com.flight.bookings.entity.Bookings;
 import com.flight.bookings.entity.Flight;
@@ -11,7 +13,8 @@ import com.flight.bookings.external.service.FlightService;
 import com.flight.bookings.service.BookingsService;
 import com.flight.bookings.service.PassengersService;
 
-public class BookingsUtilImpl implements BookingsService {
+@Component
+public class BookingsUtilImpl implements BookingsUtil {
 
 
 	@Autowired
