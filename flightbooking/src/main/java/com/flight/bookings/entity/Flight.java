@@ -18,7 +18,7 @@ public class Flight {
 	private Integer flightId;
 	
 	
-	private String flight;
+	private String flightNumber;
 	private String source;
 	private String destination;
 	private LocalDate departureDate;

@@ -1,0 +1,45 @@
+package com.flight.bookings.util;
+
+import java.util.ArrayList;
+
+import com.flight.bookings.entity.Passengers;
+
+public class PassengersUtilImpl implements PassengersUtil {
+
+	@Override
+	public Passengers createPassengers(Passengers passengers) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Passengers getPassengersById(String passengerId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void removePassenger(String passengerId) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public Passengers updatePassenger(Passengers passenger) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public ArrayList<Passengers> getByBookingId(String bookingId) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void removeByBooking(String bookingId) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

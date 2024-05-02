@@ -1,0 +1,5 @@
+package com.flight.bookings.util;
+
+public class BookingsUtilImpl implements BookingsUtil{
+
+}

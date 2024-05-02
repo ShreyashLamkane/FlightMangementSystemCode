@@ -15,39 +15,43 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.flight.bookings.entity.Passengers;
 import com.flight.bookings.service.PassengersService;
+import com.flight.bookings.util.PassengersUtil;
 
 @RestController
 @RequestMapping("/passengers")
 public class PassengersController {
 	
 	@Autowired
-	private PassengersService passengersService;
+	private PassengersUtil passengersUtil;
+	
+//	@Autowired
+//	private PassengersService passengersService;
 	
 	@PostMapping
 	public Passengers createPassenger(@RequestBody Passengers passengers) {
 		
-		return passengersService.createPassengers(passengers);
+		return passengersUtil.createPassengers(passengers);
 	}
 	
 	@GetMapping("/{passengerId}")
 	public Passengers getPassenger(@PathVariable String passengerId) {
 		
-		return passengersService.getPassengersById(passengerId);
+		return passengersUtil.getPassengersById(passengerId);
 	}
 	@DeleteMapping("/remove/{passengerId}")
 	public void removePassenger(@PathVariable String passengerId) {
-		passengersService.removePassenger(passengerId);
+		passengersUtil.removePassenger(passengerId);
 	}
 	
 	@PutMapping("/update")
 	public ResponseEntity<Passengers> updatePassenger(@RequestBody Passengers passengers) {
 		
-		return ResponseEntity.ok(passengersService.updatePassenger(passengers));
+		return ResponseEntity.ok(passengersUtil.updatePassenger(passengers));
 	}
 	
 	@GetMapping("/bookingId/{bookingId}")
 	public ArrayList<Passengers> getByBookingId(@PathVariable String bookingId ){
 		
-		return passengersService.getByBookingId(bookingId);
+		return passengersUtil.getByBookingId(bookingId);
 	}
 }

@@ -62,5 +62,8 @@ public class DetailsController {
 		return detailsService.getFlightById(flightId);
 	}
 	
-	
+//	public Integer getFareByID(@PathVariable Integer flightId) {
+//		
+//		return 
+//	}
 }

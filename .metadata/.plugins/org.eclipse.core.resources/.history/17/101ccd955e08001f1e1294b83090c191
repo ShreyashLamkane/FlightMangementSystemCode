@@ -1,0 +1,66 @@
+package com.flight.details.controller;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+
+import com.flight.details.entity.Flight;
+import com.flight.details.service.DetailsService;
+
+@RestController
+@RequestMapping("/details")
+public class DetailsController {
+	
+	@Autowired
+	private DetailsService detailsService;
+	
+	@PostMapping("/create")
+	public ResponseEntity<Flight> createFlight(@RequestBody Flight flight) {
+		System.out.println("Generated ID: " + flight.getFlightId());
+		return ResponseEntity.ok(detailsService.createFlight(flight));
+		//return detailsService.createFlight(flight);
+	}
+	
+	@GetMapping("/getFlight")
+	public List<Flight> searchFlights(
+            @RequestParam String src,
+            @RequestParam String dest,
+            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate departureDate){
+		
+		return detailsService.getFlight(src, dest, departureDate);
+		
+	}
+	
+	@DeleteMapping("/deleteFlight/{id}")
+	public ResponseEntity deleteById(@PathVariable Integer id) {
+		
+		return ResponseEntity.ok(detailsService.deleteFlight(id));
+	}
+	
+	@PutMapping("/update")
+	public ResponseEntity<Flight> updateFlight(@RequestBody Flight flight){
+		
+		return ResponseEntity.ok(detailsService.createFlight(flight));
+	}
+	
+	@GetMapping("/getFlight/{flightId}")
+	public Flight getFlightById(@PathVariable Integer flightId) {
+		
+		return detailsService.getFlightById(flightId);
+	}
+	
+	
+}

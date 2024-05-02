@@ -1,0 +1,5 @@
+package com.flight.bookings.external.service;
+
+public interface FlightService {
+
+}

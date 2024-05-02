@@ -1,0 +1,36 @@
+package com.flight.bookings.entity;
+
+
+import java.util.ArrayList;
+
+import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Transient;
+import org.springframework.data.mongodb.core.mapping.Document;
+import lombok.Data;
+
+import lombok.NoArgsConstructor;
+
+
+@NoArgsConstructor
+@Data
+@Document("Bookings")
+public class Bookings {
+	
+	@Id
+	private String bookingId;
+	private Integer flightId;
+	
+	private String bookedByName;
+	private Long phoneNumber;
+	private String email;
+	private Integer noOfPassengers;
+	
+	@Transient
+	private ArrayList<Passengers> passenger= new ArrayList<Passengers>();;
+	
+	private Long totalFare;
+	private Flight flight;
+	
+	
+	
+}
