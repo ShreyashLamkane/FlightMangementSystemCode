@@ -3,13 +3,11 @@ package com.flight.bookings.util;
 import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
 
 import com.flight.bookings.entity.Passengers;
 import com.flight.bookings.service.PassengersService;
 
-@Service
-public class PassengersUtilImpl implements PassengersUtil {
+public class PassengersUtilImpl implements PassengersUtil{
 	@Autowired
 	private PassengersService passengersService;
 	
@@ -48,5 +46,4 @@ public class PassengersUtilImpl implements PassengersUtil {
 		// TODO Auto-generated method stub
 		passengersService.removeByBooking(bookingId);
 	}
-
 }

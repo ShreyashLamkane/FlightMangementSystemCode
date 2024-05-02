@@ -30,6 +30,8 @@ public class Flight {
 	private String destination;
 	private LocalDate departureDate;
     private String departureTime;
+    private int numRows;
+    private int seatsPerRow;
 	private Integer fare;
 	
 	
