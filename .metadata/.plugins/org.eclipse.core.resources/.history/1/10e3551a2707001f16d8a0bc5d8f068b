@@ -1,0 +1,16 @@
+package com.flight.bookings.entity;
+
+import java.util.ArrayList;
+
+public class Bookings {
+	
+	private Integer bookingId;
+	private String bookedByName;
+	private Long phoneNumber;
+	private String email;
+	private Integer noOfPassengers;
+	private ArrayList<Passengers> passenger;
+	
+	private Flight flight;
+	
+}

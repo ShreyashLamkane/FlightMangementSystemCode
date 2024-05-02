@@ -1,0 +1,10 @@
+package com.flight.bookings.service;
+
+import com.flight.bookings.entity.Passengers;
+
+public interface PassengersService {
+	
+	Passengers createPassengers(Passengers passengers);
+	Passengers getPassengersById(String passengerId);
+	void removePassenger(String passengerId);
+}

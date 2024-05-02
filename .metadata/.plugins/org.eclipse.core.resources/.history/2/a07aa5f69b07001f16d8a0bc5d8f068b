@@ -1,0 +1,5 @@
+package com.flight.bookings.controller;
+
+public class PassengersController {
+
+}

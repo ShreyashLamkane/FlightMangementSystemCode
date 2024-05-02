@@ -1,0 +1,9 @@
+package com.flight.bookings.repository;
+
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+import com.flight.bookings.entity.Passengers;
+
+public interface PassengersRepository extends MongoRepository<Passengers, Integer> {
+
+}

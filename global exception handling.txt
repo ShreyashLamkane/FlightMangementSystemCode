@@ -1,0 +1,78 @@
+This code snippet represents a global exception handler in a Spring Boot application, specifically for handling the ResourceNoFoundException. Let's break it down and discuss how it works:
+
+ApiResponse Class:
+This class defines a payload structure for API responses. It contains fields such as message, success, and status to encapsulate information about the response.
+
+ResourceNoFoundException Class:
+This is a custom exception class that extends RuntimeException. It represents an exception that occurs when a requested resource is not found. It has two constructors: one with a default message and another allowing a custom message.
+
+GlobalExceptionHandler Class:
+This class is annotated with @RestControllerAdvice, indicating that it acts as a global exception handler for the application.
+
+@ExceptionHandler Method:
+The handlerResourceNotFoundException method is annotated with @ExceptionHandler(ResourceNoFoundException.class), indicating that it handles exceptions of type ResourceNoFoundException.
+Inside this method, the exception message is retrieved, and an ApiResponse object is constructed using the message, setting success to true, and specifying the HTTP status as HttpStatus.NOT_FOUND.
+Finally, a ResponseEntity containing the ApiResponse object and the corresponding HTTP status code is returned.
+How It Handles Exceptions in Microservices:
+In a microservices architecture, each microservice may have its own GlobalExceptionHandler class to handle exceptions specific to that microservice. Each microservice can independently define its own exception handling logic and return appropriate responses.
+
+For example, if a client makes a request to a microservice and a ResourceNoFoundException occurs, the GlobalExceptionHandler in that microservice will catch the exception and return an appropriate response to the client. This allows for consistent error handling across different microservices within the application.
+
+By centralizing exception handling logic in the GlobalExceptionHandler, you ensure uniformity in error responses across your microservices, making it easier to understand and manage errors in your distributed system.
+
+package com.flight.bookings.payload;
+
+import org.springframework.http.HttpStatus;
+
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class ApiResponse {
+	private String message;
+	private boolean success;
+	private HttpStatus status;
+	
+}
+package com.flight.bookings.exception;
+
+public class ResourceNoFoundException extends RuntimeException {
+
+	public ResourceNoFoundException() {
+		super("Resource Not Found on server");
+	}
+	public ResourceNoFoundException(String msg) {
+		super(msg);
+	}
+	
+}
+package com.flight.bookings.exception;
+import com.flight.bookings.payload.ApiResponse;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+
+
+@RestControllerAdvice
+public class GlobalExceptionHandler {
+	
+	@ExceptionHandler
+	public ResponseEntity<ApiResponse> handlerResourceNotFoundException(ResourceNoFoundException ex){
+		String message =ex.getMessage();
+		
+		ApiResponse response=ApiResponse.builder().message(message).success(true).status(HttpStatus.NOT_FOUND).build();
+		return new ResponseEntity<ApiResponse>(response,HttpStatus.NOT_FOUND);
+	
+	}
+}

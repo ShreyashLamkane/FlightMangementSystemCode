@@ -1,0 +1,38 @@
+package com.flight.details.service;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import com.flight.details.entity.Flight;
+import com.flight.details.repository.DetailsRepository;
+
+public class DetailsServiceImpl implements DetailsService {
+	
+	
+	private DetailsRepository detailsRepository;
+	
+	@Override
+	public boolean deleteFlight(Integer id) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public boolean updateFlight(Flight flight) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Flight> getFlight(String src, String desti, LocalDate departureDate) {
+		// TODO Auto-generated method stub
+		return searchRepository.findBySourceAndDestinationAndDepartureDate(src, desti, departureDate);
+	}
+
+	@Override
+	public Flight createFlight(Flight flight) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

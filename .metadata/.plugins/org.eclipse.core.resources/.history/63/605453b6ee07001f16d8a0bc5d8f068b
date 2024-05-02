@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    discovery:
+      enabled: true
+      
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          
+  config:
+     import: configserver:http://localhost:8084/
+    
+  application:
+    name: FLIGHT-GATEWAY

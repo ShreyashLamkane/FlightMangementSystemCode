@@ -1,0 +1,14 @@
+package com.flight.details.service;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import com.flight.details.entity.Flight;
+
+public interface DetailsService {
+	boolean deleteFlight(String id);
+	Flight updateFlight(Flight flight);
+	List<Flight> getFlight(String src,String desti,LocalDate departureDate);
+	Flight createFlight(Flight flight);
+	Flight getFlightById(Integer flightId);
+}

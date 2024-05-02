@@ -1,0 +1,9 @@
+package com.flight.details.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.flight.details.entity.Flight;
+
+public interface DetailsRepository extends JpaRepository<Flight, Integer> {
+	
+}

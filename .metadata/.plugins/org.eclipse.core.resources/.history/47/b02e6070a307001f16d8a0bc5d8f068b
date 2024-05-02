@@ -1,0 +1,21 @@
+package com.flight.bookings.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.flight.bookings.entity.Passengers;
+import com.flight.bookings.repository.PassengersRepository;
+
+@Service
+public class PassengersServiceImpl implements PassengersService {
+	
+	@Autowired
+	private PassengersRepository passengersRepository;
+	
+	@Override
+	public Passengers createPassengers(Passengers passengers) {
+		// TODO Auto-generated method stub
+		return passengersRepository.save(passengers);
+	}
+
+}

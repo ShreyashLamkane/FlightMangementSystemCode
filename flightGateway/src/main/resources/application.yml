@@ -1,0 +1,32 @@
+server:
+  port: 8085
+spring:
+  cloud:
+    discovery:
+      enabled: true
+      
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      
+      routes:
+        - id: BOOKING-SERVICE
+          uri: lb://BOOKING-SERVICE
+          predicates:
+            - Path=/bookings/**,/passengers/**
+
+        - id: FLIGHT-SERVICE
+          uri: lb://FLIGHT-SERVICE
+          predicates:
+            - Path=/details/**
+
+        - id: SEARCH-SERVICE
+          uri: lb://SEARCH-SERVICE
+          predicates:
+            - Path=/search/**  
+  config:
+     import: configserver:http://localhost:8084/
+    
+  application:
+    name: FLIGHT-GATEWAY

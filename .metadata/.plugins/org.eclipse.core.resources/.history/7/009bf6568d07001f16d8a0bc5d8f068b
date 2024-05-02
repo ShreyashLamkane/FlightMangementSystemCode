@@ -1,0 +1,13 @@
+package com.flight.bookings.service;
+
+import com.flight.bookings.entity.Passengers;
+
+public class PassengersServiceImpl implements PassengersService {
+
+	@Override
+	public Passengers createPassengers(Passengers passengers) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

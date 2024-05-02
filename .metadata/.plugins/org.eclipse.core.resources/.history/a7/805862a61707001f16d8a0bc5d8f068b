@@ -1,0 +1,44 @@
+package com.flight.details.controller;
+
+import java.time.LocalDate;
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+
+import com.flight.details.entity.Flight;
+import com.flight.details.service.DetailsService;
+
+@RestController
+@RequestMapping("/details")
+public class DetailsController {
+	
+	@Autowired
+	private DetailsService detailsService;
+	
+	@PostMapping("/create")
+	public ResponseEntity<Flight> createFlight(@RequestBody Flight flight) {
+		
+		return ResponseEntity.ok(detailsService.createFlight(flight));
+	}
+	
+	@GetMapping
+	public List<Flight> searchFlights(
+            @RequestParam String src,
+            @RequestParam String dest,
+            @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate departureDate){
+		
+		return detailsService.getFlight(src, dest, departureDate);
+		
+	}
+	
+	
+}

@@ -1,0 +1,13 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017
+      database: PassengersBookings
+  config:
+    import: configserver:http://localhost:8084/
+    
+  application:
+    name: BOOKING-SERVICE
+      
+server:
+  port: 8083

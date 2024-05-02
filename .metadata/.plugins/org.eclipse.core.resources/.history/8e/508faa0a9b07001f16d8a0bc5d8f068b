@@ -1,0 +1,52 @@
+package com.flight.bookings.entity;
+
+
+import java.util.ArrayList;
+
+
+import javax.sound.midi.Sequence;
+
+import org.springframework.data.annotation.Transient;
+import org.springframework.data.mongodb.core.FindAndModifyOptions;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.core.query.Update;
+
+import lombok.Data;
+
+import lombok.NoArgsConstructor;
+
+
+@NoArgsConstructor
+@Data
+@Document("Bookings")
+public class Bookings {
+	
+	private Integer bookingId;
+	private Integer flightId;
+	
+	private String bookedByName;
+	private Long phoneNumber;
+	private String email;
+	private Integer noOfPassengers;
+	
+	@Transient
+	private ArrayList<Passengers> passenger;
+	
+	
+	private Flight flight;
+	
+	  // Auto-increment the ID
+    public static long getNextId(String seqName, MongoTemplate mongoTemplate) {
+        Sequence sequence = mongoTemplate.findAndModify(
+            Query.query(Criteria.where("_id").is(seqName)),
+            new Update().inc("value", 1),
+            FindAndModifyOptions.options().returnNew(true).upsert(true),
+            Sequence.class
+        );
+        return sequence.getValue();
+    }
+	
+}

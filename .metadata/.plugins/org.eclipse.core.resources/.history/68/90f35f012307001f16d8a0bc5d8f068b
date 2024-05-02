@@ -1,0 +1,5 @@
+package com.flight.bookings.entity;
+
+public class Bookings {
+
+}

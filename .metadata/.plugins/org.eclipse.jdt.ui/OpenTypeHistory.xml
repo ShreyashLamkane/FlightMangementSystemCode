@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+    <typeInfo handle="=flightdetails/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.flight.details.service{DetailsService.java[DetailsService" modifiers="513" timestamp="1714562672310"/>
+    <typeInfo handle="=flightbooking/C:\/Users\/SLAMKANE\/.m2\/repository\/org\/springframework\/data\/spring-data-mongodb\/4.2.5\/spring-data-mongodb-4.2.5.jar=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-mongodb=/=/maven.version=/4.2.5=/=/maven.scope=/compile=/=/maven.pomderived=/true=/&lt;org.springframework.data.mongodb.repository(MongoRepository.class[MongoRepository" modifiers="1537" timestamp="1713867947892"/>
+    <typeInfo handle="=flightbooking/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.flight.bookings.service{PassengersService.java[PassengersService" modifiers="513" timestamp="1714563338129"/>
+    <typeInfo handle="=flightbooking/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.flight.bookings.service{BookingsService.java[BookingsService" modifiers="513" timestamp="1714563991053"/>
+</typeInfoHistroy>

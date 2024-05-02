@@ -1,0 +1,45 @@
+package com.flight.bookings.controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.flight.bookings.entity.Passengers;
+import com.flight.bookings.service.PassengersService;
+
+@RestController
+@RequestMapping("/passengers")
+public class PassengersController {
+	
+	@Autowired
+	private PassengersService passengersService;
+	
+	@PostMapping
+	public Passengers createPassenger(@RequestBody Passengers passengers) {
+		
+		return passengersService.createPassengers(passengers);
+	}
+	
+	@GetMapping("/{passengerId}")
+	public Passengers getPassenger(@PathVariable String passengerId) {
+		
+		return passengersService.getPassengersById(passengerId);
+	}
+	@DeleteMapping("/remove/{passengerId}")
+	public void removePassenger(@PathVariable String passengerId) {
+		passengersService.removePassenger(passengerId);
+	}
+	
+	@PutMapping("/update")
+	public ResponseEntity<Passengers> updatePassenger(@RequestBody Passengers passengers) {
+		
+		return ResponseEntity.ok(passengersService.updatePassenger(passengers));
+	}
+}
