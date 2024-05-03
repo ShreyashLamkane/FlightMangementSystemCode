@@ -44,26 +44,26 @@ public class DetailsController {
             @RequestParam String dest,
             @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate departureDate){
 		
-		return detailsService.getFlight(src, dest, departureDate);
+		return flightDetailsUtil.getFlight(src, dest, departureDate);
 		
 	}
 	
 	@DeleteMapping("/deleteFlight/{id}")
 	public ResponseEntity deleteById(@PathVariable Integer id) {
 		
-		return ResponseEntity.ok(detailsService.deleteFlight(id));
+		return ResponseEntity.ok(flightDetailsUtil.deleteFlight(id));
 	}
 	
 	@PutMapping("/update")
 	public ResponseEntity<Flight> updateFlight(@RequestBody Flight flight){
 		
-		return ResponseEntity.ok(detailsService.createFlight(flight));
+		return ResponseEntity.ok(flightDetailsUtil.createFlight(flight));
 	}
 	
 	@GetMapping("/getFlight/{flightId}")
 	public Flight getFlightById(@PathVariable Integer flightId) {
 		
-		return detailsService.getFlightById(flightId);
+		return flightDetailsUtil.getFlightById(flightId);
 	}
 	
 //	public Integer getFareByID(@PathVariable Integer flightId) {

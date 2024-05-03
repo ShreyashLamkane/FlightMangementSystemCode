@@ -30,6 +30,11 @@ spring:
           uri: lb://SEATNFARE-SERVICE
           predicates:
             - Path=/seats/**  
+            
+        - id: WEBCHECKIN-SERVICE
+          uri: lb://WEBCHECKIN-SERVICE
+          predicates:
+            - Path=/web/**
   config:
      import: configserver:http://localhost:8084/
     

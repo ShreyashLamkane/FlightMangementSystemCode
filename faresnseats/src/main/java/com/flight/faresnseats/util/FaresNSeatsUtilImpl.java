@@ -69,4 +69,19 @@ public class FaresNSeatsUtilImpl implements  FaresNSeatsUtil{
         }
     }
 
+	@Override
+	public Integer getFareByFlightIdAndClass(Integer flightId, String seatClass) {
+		// TODO Auto-generated method stub
+		FareNSeats f= faresNSeatsService.getFareByFlightIdAndClass(flightId, seatClass);
+		Double d=f.getFare();
+		return (int) d.doubleValue();
+	}
+
+	@Override
+	public List<FareNSeats> getAvailableSeats(Integer flightId, String seatClass) {
+		// TODO Auto-generated method stub
+		
+		return faresNSeatsService.getAvailableSeats(flightId, seatClass);
+	}
+
 }

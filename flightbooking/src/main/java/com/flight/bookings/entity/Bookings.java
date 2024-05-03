@@ -28,6 +28,7 @@ public class Bookings {
 	@Transient
 	private ArrayList<Passengers> passenger= new ArrayList<Passengers>();;
 	
+	private String seatClass;
 	private int totalFare;
 	private Flight flight;
 	

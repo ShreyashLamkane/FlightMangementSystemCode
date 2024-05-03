@@ -25,4 +25,16 @@ public class FaresNSeatsServiceImpl implements  FaresNSeatsService{
 		return fareNSeatsRepository.saveAll(list);
 	}
 
+	@Override
+	public FareNSeats getFareByFlightIdAndClass(Integer flightId, String seatClass) {
+		// TODO Auto-generated method stub
+		return fareNSeatsRepository.findFirstByFlightIdAndSeatClass(flightId, seatClass);
+	}
+
+	@Override
+	public List<FareNSeats> getAvailableSeats(Integer flightId, String seatClass) {
+		// TODO Auto-generated method stub
+		return fareNSeatsRepository.findAllByFlightIdAndSeatClassAndAvailable(flightId, seatClass, true);
+	}
+
 }

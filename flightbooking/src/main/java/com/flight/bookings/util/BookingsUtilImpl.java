@@ -9,13 +9,17 @@ import org.springframework.stereotype.Service;
 import com.flight.bookings.entity.Bookings;
 import com.flight.bookings.entity.Flight;
 import com.flight.bookings.entity.Passengers;
+import com.flight.bookings.exception.ResourceNoFoundException;
+import com.flight.bookings.external.service.FareNSeatsService;
 import com.flight.bookings.external.service.FlightService;
 import com.flight.bookings.service.BookingsService;
 import com.flight.bookings.service.PassengersService;
 
 @Component
 public class BookingsUtilImpl implements BookingsUtil {
-
+	
+	@Autowired
+	private FareNSeatsService fareNSeatsService;
 
 	@Autowired
 	private BookingsService bookingsService;
@@ -43,10 +47,19 @@ public class BookingsUtilImpl implements BookingsUtil {
 			
 			passengersService.createPassengers(passenger);
 		}
-		Flight flight=flightService.getFlightById(bookings.getFlightId());
-		bookings.setFlight(flight);
-		bookings.setTotalFare(flight.getFare()*bookings.getNoOfPassengers());
-		bookingsService.createBookings(bookings);
+		
+			
+			Flight flight=flightService.getFlightById(bookings.getFlightId());
+			
+			bookings.setFlight(flight);
+			
+			
+			Integer	fare=fareNSeatsService.getFareByFlightIdAndClass(bookings.getFlightId(), bookings.getSeatClass());
+			
+			bookings.setTotalFare(fare*bookings.getNoOfPassengers());
+			bookingsService.createBookings(bookings);
+		
+		
 		return r;
 	}
 
