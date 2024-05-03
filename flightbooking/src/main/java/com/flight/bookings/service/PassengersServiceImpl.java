@@ -3,6 +3,7 @@ package com.flight.bookings.service;
 import java.util.ArrayList;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.flight.bookings.entity.Passengers;
@@ -43,4 +44,6 @@ public class PassengersServiceImpl implements PassengersService {
 		
 		passengersRepository.deleteAllByBookingId(bookingId);
 	}
+
+	
 }

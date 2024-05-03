@@ -84,4 +84,12 @@ public class FaresNSeatsUtilImpl implements  FaresNSeatsUtil{
 		return faresNSeatsService.getAvailableSeats(flightId, seatClass);
 	}
 
+	@Override
+	public void changeAvailability(Integer flightId, String seatNo) {
+		// TODO Auto-generated method stub
+		faresNSeatsService.changeAvailability(flightId, seatNo);
+	}
+	
+	
+	
 }

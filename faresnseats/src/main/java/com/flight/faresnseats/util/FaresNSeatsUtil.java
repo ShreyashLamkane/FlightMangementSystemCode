@@ -11,4 +11,5 @@ public interface FaresNSeatsUtil {
 	List<FareNSeats> createFareNSeats(Integer flightId);
 	Integer getFareByFlightIdAndClass(Integer flightId,String seatClass);
 	List<FareNSeats> getAvailableSeats(Integer flightId, String seatClass );
+	void changeAvailability(Integer flightId,String seatNo);
 }

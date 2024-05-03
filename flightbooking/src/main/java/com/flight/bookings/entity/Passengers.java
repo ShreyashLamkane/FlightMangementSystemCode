@@ -21,4 +21,5 @@ public class Passengers {
 	private String passengerName;
 	private Long passengerPhone;
 	private String passengerEmail;
+	private String seatNumber;
 }

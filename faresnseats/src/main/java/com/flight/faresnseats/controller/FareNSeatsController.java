@@ -3,6 +3,7 @@ package com.flight.faresnseats.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -37,5 +38,12 @@ public class FareNSeatsController {
 	public List<FareNSeats> getAvailableSeats(@PathVariable Integer flightId, @RequestParam String seatClass ){
 		
 		return faresNSeatsUtil.getAvailableSeats(flightId, seatClass);
+	}
+	
+	@PostMapping("/change/{flightId}/{seatNumber}")
+	public ResponseEntity<?> changeAvailability(@PathVariable Integer flightId, @PathVariable String seatNumber) {
+		
+		faresNSeatsUtil.changeAvailability(flightId, seatNumber);
+		return new ResponseEntity(HttpStatus.ACCEPTED);
 	}
 }

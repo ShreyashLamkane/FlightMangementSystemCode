@@ -64,7 +64,7 @@ public class BookingsController {
 	}
 	
 	@GetMapping("/byBookingId/{bookingId}")
-	public Bookings getById(@PathVariable String bookingId) {
+	public Bookings getBookingById(@PathVariable String bookingId) {
 		
 //		ArrayList<Passengers> list=new ArrayList<Passengers>();
 //		list=passengersService.getByBookingId(bookingId);
@@ -73,6 +73,7 @@ public class BookingsController {
 		Bookings booked=bookingsUtil.getById(bookingId);
 		return booked;
 	}
+	
 	
 	
 	

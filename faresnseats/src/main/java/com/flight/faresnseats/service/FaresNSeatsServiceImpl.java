@@ -37,4 +37,13 @@ public class FaresNSeatsServiceImpl implements  FaresNSeatsService{
 		return fareNSeatsRepository.findAllByFlightIdAndSeatClassAndAvailable(flightId, seatClass, true);
 	}
 
+	@Override
+	public void changeAvailability(Integer flightId, String seatNo) {
+		// TODO Auto-generated method stub
+		
+		FareNSeats seat= fareNSeatsRepository.findByFlightIdAndSeatNumber(flightId, seatNo);
+		seat.setAvailable(false);
+		fareNSeatsRepository.save(seat);
+	}
+
 }

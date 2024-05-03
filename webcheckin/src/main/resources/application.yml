@@ -2,7 +2,7 @@ spring:
   data:
     mongodb:
       uri: mongodb://localhost:27017
-      database: PassengersBookings
+      database: SeatsAllocation
   config:
     import: configserver:http://localhost:8084/
     

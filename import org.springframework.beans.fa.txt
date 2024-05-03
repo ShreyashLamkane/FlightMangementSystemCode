@@ -1,103 +1,69 @@
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-import java.util.ArrayList;
-import java.util.List;
+@RestController
+public class BookingController {
+    @Autowired
+    private BookingService bookingService;
+
+    @PostMapping("/bookings")
+    public ResponseEntity<BookingResponse> bookFlight(@RequestBody BookingRequest request) {
+        // Logic to book the flight
+        BookingResponse response = bookingService.bookFlight(request);
+        return ResponseEntity.ok(response);
+    }
+
+    @PutMapping("/bookings/{bookingId}/passengers")
+    public ResponseEntity<String> updateBookingWithPassenger(@PathVariable String bookingId, @RequestBody Passenger passenger) {
+        // Logic to update booking with passenger information
+        bookingService.updateBookingWithPassenger(bookingId, passenger);
+        return ResponseEntity.ok("Passenger information updated successfully");
+    }
+}
+@Service
+public class BookingService {
+    @Autowired
+    private BookingRepository bookingRepository;
+
+    public BookingResponse bookFlight(BookingRequest request) {
+        // Logic to book the flight
+    }
+
+    public void updateBookingWithPassenger(String bookingId, Passenger passenger) {
+        // Logic to update booking with passenger information
+        Booking booking = bookingRepository.findById(bookingId).orElseThrow(() -> new RuntimeException("Booking not found"));
+        booking.addPassenger(passenger); // Assuming addPassenger method exists in Booking class
+        bookingRepository.save(booking);
+    }
+}
+
+
+@RestController
+public class SeatAllocationController {
+    @Autowired
+    private SeatAllocationService seatAllocationService;
+
+    @PostMapping("/checkin/{bookingId}")
+    public ResponseEntity<String> webCheckIn(@PathVariable String bookingId) {
+        // Logic to perform seat allocation and update the seat allocation database
+        seatAllocationService.performWebCheckInAndUpdateSeatAllocation(bookingId);
+        return ResponseEntity.ok("Seats allocated successfully");
+    }
+}
+
 
 @Service
-public class SeatService {
+public class SeatAllocationService {
+    @Autowired
+    private SeatAllocationRepository seatAllocationRepository;
 
     @Autowired
-    private SeatRepository seatRepository;
+    private BookingServiceClient bookingServiceClient;
 
-    public List<Seat> addSeatsToFlight(Long flightId, int numRows, int seatsPerRow) {
-        List<Seat> seats = new ArrayList<>();
-        char seatLetter = 'A';
-
-        for (int row = 1; row <= numRows; row++) {
-            for (int seat = 1; seat <= seatsPerRow; seat++) {
-                Seat newSeat = new Seat();
-                newSeat.setFlightId(flightId);
-                newSeat.setSeatNumber(row + String.valueOf(seatLetter));
-                newSeat.setSeatClass(calculateSeatClass(row)); // Calculate seat class based on row
-                newSeat.setFare(calculateFare(newSeat.getSeatClass())); // Calculate fare based on seat class
-                newSeat.setAvailable(true);
-                seats.add(newSeat);
-            }
-            seatLetter++; // Increment seat letter
-        }
-
-        return seatRepository.saveAll(seats);
+    public void performWebCheckInAndUpdateSeatAllocation(String bookingId) {
+        // Retrieve booking details from the booking microservice
+        BookingDetails bookingDetails = bookingServiceClient.getBookingDetails(bookingId);
+        
+        // Perform seat allocation logic based on booking details
+        // Update seat allocation database
+        SeatAllocation seatAllocation = new SeatAllocation(/* Seat allocation details */);
+        seatAllocationRepository.save(seatAllocation);
     }
-
-    private String calculateSeatClass(int row) {
-        // For example, consider the first few rows as first class, then business, then economy
-        if (row <= 5) {
-            return "First Class";
-        } else if (row <= 15) {
-            return "Business Class";
-        } else {
-            return "Economy Class";
-        }
-    }
-
-    private double calculateFare(String seatClass) {
-        // Base fare for economy class is 500, for business class, it is 3 times the base fare
-        if (seatClass.equals("Economy Class")) {
-            return 500.0;
-        } else if (seatClass.equals("Business Class")) {
-            return 3 * 500.0; // Three times the base fare
-        } else {
-            // Assuming first class fare is different from the others
-            // You can define your own logic here
-            return 1000.0; // Example fare for first class
-        }
-    }
-
-    // Other methods...
-}
-
-
-
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import java.util.Date;
-
-@Entity
-public class Flight {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String flightNumber;
-    private String origin;
-    private String destination;
-    private Date departureTime;
-    private Date arrivalTime;
-
-    // Constructors, getters, setters, etc.
-}
-
-
-
-
-
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-@Entity
-public class Seat {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String seatNumber; // Format like "26B"
-    private String seatClass;
-    private double fare;
-    private boolean available;
-    private Long flightId; // To link the seat to a specific flight
-
-    // Constructors, getters, setters, etc.
 }
