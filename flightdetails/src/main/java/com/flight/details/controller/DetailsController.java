@@ -31,6 +31,8 @@ public class DetailsController {
 	@Autowired
 	private DetailsService detailsService;
 	
+	//Creating the new flight
+	
 	@PostMapping("/create")
 	public ResponseEntity<Flight> createFlight(@RequestBody Flight flight) {
 		System.out.println("Generated ID: " + flight.getFlightId());
@@ -38,6 +40,7 @@ public class DetailsController {
 		//return detailsService.createFlight(flight);
 	}
 	
+	//Getting all the available flights by source destination and date given 
 	@GetMapping("/getFlight")
 	public List<Flight> searchFlights(
             @RequestParam String src,
@@ -48,11 +51,15 @@ public class DetailsController {
 		
 	}
 	
+	//Deleting the flights by it's ID
+	
 	@DeleteMapping("/deleteFlight/{id}")
 	public ResponseEntity deleteById(@PathVariable Integer id) {
 		
 		return ResponseEntity.ok(flightDetailsUtil.deleteFlight(id));
 	}
+	
+	//Updating the flight if there is any change
 	
 	@PutMapping("/update")
 	public ResponseEntity<Flight> updateFlight(@RequestBody Flight flight){
@@ -60,6 +67,8 @@ public class DetailsController {
 		return ResponseEntity.ok(flightDetailsUtil.createFlight(flight));
 	}
 	
+	
+	//Getting the single Flight by Id
 	@GetMapping("/getFlight/{flightId}")
 	public Flight getFlightById(@PathVariable Integer flightId) {
 		

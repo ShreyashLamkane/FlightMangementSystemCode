@@ -44,3 +44,4 @@ public class WebCheckInController {
 		return webCheckInUtil.getSeatByBookingId(bookingId);
 	}
 }
+	

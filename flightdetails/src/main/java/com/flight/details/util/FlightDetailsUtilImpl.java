@@ -13,16 +13,22 @@ import com.flight.details.service.DetailsService;
 @Component
 public class FlightDetailsUtilImpl implements FlightDetailsUtil {
 	
+	//Getting the Fare & Seats Micro-service Functions
 	@Autowired
 	private FareNSeatsService fareNSeatsService;
 	
+	//Creating the service instance
 	@Autowired
 	private DetailsService detailsService;
 	
 	@Override
 	public Flight createFlight(Flight flight) {
 		// TODO Auto-generated method stub
+		
+		//Adding the new Flight in Database
 		Flight flight1=detailsService.createFlight(flight);
+		
+		//Creating the seats and therir fare for given flight in fares & Seat Repository
 		fareNSeatsService.setSeatsNFare(flight1.getFlightId());
 		return flight1;
 	}
