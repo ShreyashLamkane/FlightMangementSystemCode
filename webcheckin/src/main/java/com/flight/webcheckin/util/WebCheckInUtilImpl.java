@@ -31,32 +31,42 @@ public class WebCheckInUtilImpl implements WebCheckInUtil{
 		return fareNSeatsService.getAvailableSeats(flightId, seatClass);
 	}
 	@Override
-	public void seatAllocation(String bookingId) {
+	public boolean seatAllocation(String bookingId) {
 		// TODO Auto-generated method stub
 		Bookings booking=bookingService.getBookingById(bookingId);
+		if (booking == null || booking.getNoOfPassengers() == null) {
+	       
+	        return false;
+	    }
 		 Random random = new Random();
-	        
+	        System.out.println(booking);
 		//Getting all the available seats
 		List<FareNSeats> seats=fareNSeatsService.getAvailableSeats(booking.getFlightId(), booking.getSeatClass());
 		ArrayList<Passengers> p=booking.getPassenger();
-		for(int i=1;i<=booking.getNoOfPassengers();i++) {
+		for(int i=0;i<booking.getNoOfPassengers();i++) {
 			Seat seat=new Seat();
 			seat.setBookingId(bookingId);
 			seat.setFlightId(booking.getFlightId());
-			Passengers p1=p.get(i-1);
+			Passengers p1=p.get(i);
 			seat.setPassengerId(p1.getPassengerId());
 			seat.setSeatClass(booking.getSeatClass());
-			int randomIndex = random.nextInt(seats.size());
-			String s=seats.get(randomIndex).getSeatNumber();
-			seat.setSeatNumber(s);
-			seats.remove(randomIndex);
 			
-			
-			Seat seatReturned=seatService.addSeat(seat);
-			
-			fareNSeatsService.changeAvailability(seatReturned.getFlightId(), seatReturned.getSeatNumber());
+			if (!seats.isEmpty()) {
+				int randomIndex = random.nextInt(seats.size());
+				String s=seats.get(randomIndex).getSeatNumber();
+				seat.setSeatNumber(s);
+				seats.remove(randomIndex);
+				
+				
+				Seat seatReturned=seatService.addSeat(seat);
+				
+				fareNSeatsService.changeAvailability(seatReturned.getFlightId(), seatReturned.getSeatNumber());
+			}
+			else {
+				
+			}
 		}
-		
+		return true;
 	}
 	@Override
 	public List<Seat> getSeatByBookingId(String bookingId) {

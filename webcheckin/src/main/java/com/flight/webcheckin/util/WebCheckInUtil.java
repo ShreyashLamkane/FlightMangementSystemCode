@@ -9,6 +9,6 @@ import com.flight.webcheckin.entity.Seat;
 
 public interface WebCheckInUtil {
 	List<FareNSeats> getAvailableSeats(Integer flightId,String seatClass);
-	void seatAllocation(String bookingId);
+	boolean seatAllocation(String bookingId);
 	List<Seat> getSeatByBookingId(String bookingId);
 }

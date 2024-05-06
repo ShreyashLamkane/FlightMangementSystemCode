@@ -1,0 +1,50 @@
+00:01:10.207 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:02:33.232 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+00:02:35.018 [main] INFO  c.f.d.u.FlightDetailsUtilImplTest - Starting FlightDetailsUtilImplTest using Java 17.0.10 with PID 41384 (started by slamkane in C:\Case Study\flightdetails)
+00:02:35.020 [main] INFO  c.f.d.u.FlightDetailsUtilImplTest - No active profile set, falling back to 1 default profile: "default"
+00:02:35.067 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8084/
+00:02:35.067 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-SERVICE, profiles=[default], label=null, version=a4a96a9100850079c5dbe3410d3faa6cd42bfb26, state=null
+00:02:35.187 [main] INFO  c.f.d.u.FlightDetailsUtilImplTest - Started FlightDetailsUtilImplTest in 1.969 seconds (process running for 3.37)
+00:04:14.409 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+00:04:15.968 [main] INFO  c.f.d.u.FlightDetailsUtilImplTest - Starting FlightDetailsUtilImplTest using Java 17.0.10 with PID 27460 (started by slamkane in C:\Case Study\flightdetails)
+00:04:15.969 [main] INFO  c.f.d.u.FlightDetailsUtilImplTest - No active profile set, falling back to 1 default profile: "default"
+00:04:16.023 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8084/
+00:04:16.023 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-SERVICE, profiles=[default], label=null, version=a4a96a9100850079c5dbe3410d3faa6cd42bfb26, state=null
+00:04:16.175 [main] INFO  c.f.d.u.FlightDetailsUtilImplTest - Started FlightDetailsUtilImplTest in 1.777 seconds (process running for 3.226)
+00:05:29.522 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+00:05:31.071 [main] INFO  c.f.d.u.FlightDetailsUtilImplTest - Starting FlightDetailsUtilImplTest using Java 17.0.10 with PID 13928 (started by slamkane in C:\Case Study\flightdetails)
+00:05:31.073 [main] INFO  c.f.d.u.FlightDetailsUtilImplTest - No active profile set, falling back to 1 default profile: "default"
+00:05:31.122 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8084/
+00:05:31.122 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-SERVICE, profiles=[default], label=null, version=a4a96a9100850079c5dbe3410d3faa6cd42bfb26, state=null
+00:05:31.275 [main] INFO  c.f.d.u.FlightDetailsUtilImplTest - Started FlightDetailsUtilImplTest in 1.768 seconds (process running for 3.124)
+00:05:52.724 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+00:05:54.226 [main] INFO  c.f.d.u.FlightDetailsUtilImplTest - Starting FlightDetailsUtilImplTest using Java 17.0.10 with PID 35424 (started by slamkane in C:\Case Study\flightdetails)
+00:05:54.228 [main] INFO  c.f.d.u.FlightDetailsUtilImplTest - No active profile set, falling back to 1 default profile: "default"
+00:05:54.291 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8084/
+00:05:54.292 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-SERVICE, profiles=[default], label=null, version=a4a96a9100850079c5dbe3410d3faa6cd42bfb26, state=null
+00:05:54.455 [main] INFO  c.f.d.u.FlightDetailsUtilImplTest - Started FlightDetailsUtilImplTest in 1.737 seconds (process running for 3.062)
+00:06:02.832 [main] INFO  o.s.b.d.r.RestartApplicationListener - Restart disabled due to context in which it is running
+00:06:04.238 [main] INFO  c.f.d.u.FlightDetailsUtilImplTest - Starting FlightDetailsUtilImplTest using Java 17.0.10 with PID 39348 (started by slamkane in C:\Case Study\flightdetails)
+00:06:04.239 [main] INFO  c.f.d.u.FlightDetailsUtilImplTest - No active profile set, falling back to 1 default profile: "default"
+00:06:04.290 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Fetching config from server at : http://localhost:8084/
+00:06:04.290 [main] INFO  o.s.c.c.c.ConfigServerConfigDataLoader - Located environment: name=FLIGHT-SERVICE, profiles=[default], label=null, version=a4a96a9100850079c5dbe3410d3faa6cd42bfb26, state=null
+00:06:04.422 [main] INFO  c.f.d.u.FlightDetailsUtilImplTest - Started FlightDetailsUtilImplTest in 1.6 seconds (process running for 2.971)
+00:06:10.228 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:11:10.238 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:16:10.242 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:21:10.251 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:26:10.262 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:31:10.272 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:36:10.287 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:41:10.307 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:46:10.330 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:51:10.338 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+00:56:10.352 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:01:10.357 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:06:10.372 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:11:10.386 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:16:10.389 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:21:10.399 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:26:10.414 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+01:31:10.429 [AsyncResolver-bootstrap-executor-0] INFO  c.n.d.s.r.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+09:27:18.456 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h53m15s184ms625µs).

@@ -47,7 +47,7 @@ public class FaresNSeatsUtilImpl implements  FaresNSeatsUtil{
 	}
 	
 	private String calculateSeatClass(int row) {
-        // For example, consider the first few rows as first class, then business, then economy
+        
         if (row <= 5) {
             return "First Class";
         } else if (row <= 10) {
@@ -57,15 +57,14 @@ public class FaresNSeatsUtilImpl implements  FaresNSeatsUtil{
         }
     }
 	private double calculateFare(String seatClass,Integer baseFare) {
-        // Base fare for economy class is 500, for business class, it is 3 times the base fare
+       
         if (seatClass.equals("Economy Class")) {
             return baseFare;
         } else if (seatClass.equals("Business Class")) {
-            return 5 * baseFare; // Three times the base fare
+            return 5 * baseFare; 
         } else {
-            // Assuming first class fare is different from the others
-            // You can define your own logic here
-            return 3*baseFare; // Example fare for first class
+            
+            return 3*baseFare; 
         }
     }
 

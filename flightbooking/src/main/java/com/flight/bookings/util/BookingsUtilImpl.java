@@ -31,10 +31,7 @@ public class BookingsUtilImpl implements BookingsUtil {
 	private FlightService flightService;
 	@Override
 	public Bookings createBookings(Bookings bookings) {
-		// TODO Auto-generated method stub
-//		Flight flight=flightService.getFlightById(bookings.getFlightId());
-//		bookings.setFlight(flight);
-//		bookings.setTotalFare(flight.getFare()*bookings.getNoOfPassengers());
+
 		Bookings r=bookingsService.createBookings(bookings);
 		for(Passengers p: bookings.getPassenger()) {
 			Passengers passenger=new Passengers();
