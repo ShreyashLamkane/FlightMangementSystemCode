@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="jakarta.annotation.Generated"/>
-    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.function.EntityResponse"/>
     <fullyQualifiedTypeName name="com.flight.bookings.payload.ApiResponse"/>
+    <fullyQualifiedTypeName name="com.flight.webcheckin.entity.Passengers"/>
     <fullyQualifiedTypeName name="org.springframework.http.ResponseEntity"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpStatusCode"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="org.springframework.http.HttpStatus"/>
+    <fullyQualifiedTypeName name="springfox.documentation.swagger2.annotations.EnableSwagger2"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.GenerationType"/>
+    <fullyQualifiedTypeName name="com.flight.flightsecurity.repository.UserCredentialsRepository"/>
+    <fullyQualifiedTypeName name="com.flight.flightsecurity.entity.UserCredentials"/>
+    <fullyQualifiedTypeName name="com.flight.flightsecurity.entity.CustomUserDetails"/>
+    <fullyQualifiedTypeName name="com.google.common.net.HttpHeaders"/>
+    <fullyQualifiedTypeName name="org.springframework.http.server.reactive.ServerHttpRequest"/>
+    <fullyQualifiedTypeName name="java.util.function.Predicate"/>
 </qualifiedTypeNameHistroy>

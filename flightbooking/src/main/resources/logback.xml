@@ -9,12 +9,13 @@
     </appender>
 
     <appender name="RollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
-    <file>logs/myapp.log</file> <!-- Specify the log file path -->
+    <file>logs/myapp.log</file> 
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
             <fileNamePattern>logs/myapp-%d{yyyy-MM-dd}.%i.log.gz</fileNamePattern>
-            <maxFileSize>10MB</maxFileSize> <!-- Set the maximum size of each log file -->
-            <maxHistory>30</maxHistory> <!-- Set the maximum number of archived log files -->
-            <totalSizeCap>1GB</totalSizeCap> <!-- Set the total size cap for all archived files -->
+            <maxFileSize>10MB</maxFileSize> 
+            <maxHistory>30</maxHistory> 
+            <totalSizeCap>1GB</totalSizeCap> 
+            
         </rollingPolicy>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
              <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
