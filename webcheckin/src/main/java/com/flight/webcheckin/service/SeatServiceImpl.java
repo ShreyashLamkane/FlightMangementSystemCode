@@ -26,6 +26,12 @@ public class SeatServiceImpl implements SeatService {
 		return webCheckInRepository.findAllByBookingId(bookingId);
 	}
 
+//	@Override
+//	public boolean changeToAvailable(String passengerId) {
+//		// TODO Auto-generated method stub
+//		return false;
+//	}
+
 	
 	
 

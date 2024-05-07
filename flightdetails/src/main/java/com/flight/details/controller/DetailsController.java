@@ -3,6 +3,8 @@ package com.flight.details.controller;
 import java.time.LocalDate;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
@@ -25,6 +27,8 @@ import com.flight.details.util.FlightDetailsUtil;
 @RequestMapping("/details")
 public class DetailsController {
 	
+	private static final Logger logger = LoggerFactory.getLogger(DetailsController.class);
+	
 	@Autowired
 	private FlightDetailsUtil flightDetailsUtil;
 	
@@ -36,6 +40,7 @@ public class DetailsController {
 	@PostMapping("/create")
 	public ResponseEntity<Flight> createFlight(@RequestBody Flight flight) {
 		System.out.println("Generated ID: " + flight.getFlightId());
+		logger.info("Creating new flight: {}", flight);
 		return ResponseEntity.ok(flightDetailsUtil.createFlight(flight));
 		//return detailsService.createFlight(flight);
 	}
@@ -46,7 +51,7 @@ public class DetailsController {
             @RequestParam String src,
             @RequestParam String dest,
             @RequestParam @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate departureDate){
-		
+		 logger.info("Searching flights from {} to {} for departure date: {}", src, dest, departureDate);
 		return flightDetailsUtil.getFlight(src, dest, departureDate);
 		
 	}
@@ -55,7 +60,7 @@ public class DetailsController {
 	
 	@DeleteMapping("/deleteFlight/{id}")
 	public ResponseEntity deleteById(@PathVariable Integer id) {
-		
+		logger.info("Deleting flight with ID: {}", id);
 		return ResponseEntity.ok(flightDetailsUtil.deleteFlight(id));
 	}
 	
@@ -63,7 +68,7 @@ public class DetailsController {
 	
 	@PutMapping("/update")
 	public ResponseEntity<Flight> updateFlight(@RequestBody Flight flight){
-		
+		logger.info("Updating flight with ID: {}", flight.getFlightId());
 		return ResponseEntity.ok(flightDetailsUtil.createFlight(flight));
 	}
 	
@@ -71,7 +76,7 @@ public class DetailsController {
 	//Getting the single Flight by Id
 	@GetMapping("/getFlight/{flightId}")
 	public Flight getFlightById(@PathVariable Integer flightId) {
-		
+		logger.info("Fetching flight by ID: {}", flightId);
 		return flightDetailsUtil.getFlightById(flightId);
 	}
 	

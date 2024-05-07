@@ -40,11 +40,13 @@ public class FareNSeatsUtilImplTest {
 	    @Test
 	    public void testCreateFareNSeats() {
 	        // Mocking flight details
+	    	
 	        Flight flight = new Flight();
 	        flight.setFlightId(8);;
 	        flight.setNumRows(10);
 	        flight.setSeatsPerRow(6);
 	        flight.setFare(100);
+	        
 	        when(flightDetails.getFlightById(1)).thenReturn(flight);
 
 	      

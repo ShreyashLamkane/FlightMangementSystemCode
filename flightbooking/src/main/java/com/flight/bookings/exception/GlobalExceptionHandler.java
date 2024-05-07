@@ -20,4 +20,13 @@ public class GlobalExceptionHandler {
 		return new ResponseEntity<ApiResponse>(response,HttpStatus.NOT_FOUND);
 	
 	}
+	
+	@ExceptionHandler
+	public ResponseEntity<ApiResponse> handlerResourceNotFoundException(NotSufficientSeats ex){
+		String message =ex.getMessage();
+		
+		ApiResponse response=ApiResponse.builder().message(message).success(false).status(HttpStatus.FORBIDDEN).build();
+		return new ResponseEntity<ApiResponse>(response,HttpStatus.NOT_FOUND);
+	
+	}
 }

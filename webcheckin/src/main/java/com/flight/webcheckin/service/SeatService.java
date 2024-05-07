@@ -9,5 +9,5 @@ import com.flight.webcheckin.entity.Seat;
 public interface SeatService {
 	Seat addSeat(Seat seat);
 	List<Seat> getSeatByBookingId(String bookingId);
-	
+//	public boolean changeToAvailable(String passengerId);
 }

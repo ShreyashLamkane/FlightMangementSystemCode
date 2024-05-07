@@ -9,4 +9,5 @@ import com.flight.webcheckin.entity.Seat;
 public interface WebCheckInRepository extends MongoRepository<Seat, String> {
 	
 	List<Seat> findAllByBookingId(String bookingId);
+	void deleteByPassengerId(String passengerId);
 }
