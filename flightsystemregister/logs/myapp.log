@@ -766,3 +766,178 @@
 16:08:36.001 [http-nio-8761-exec-3] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance BOOKING-SERVICE/LIN-33BP8G3.corp.capgemini.com:BOOKING-SERVICE:8083 with status DOWN (replication=false)
 16:08:36.726 [http-nio-8761-exec-6] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance WEBCHECKIN-SERVICE/LIN-33BP8G3.corp.capgemini.com:WEBCHECKIN-SERVICE:8086 with status UP (replication=false)
 16:08:37.618 [http-nio-8761-exec-9] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance BOOKING-SERVICE/LIN-33BP8G3.corp.capgemini.com:BOOKING-SERVICE:8083 with status UP (replication=false)
+16:09:33.784 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
+16:10:33.785 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+16:11:33.786 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+16:12:33.801 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 14ms
+16:13:31.071 [Eureka-PeerNodesUpdater] WARN  c.n.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+16:13:33.809 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+16:14:33.811 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+16:15:33.823 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
+16:16:33.832 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+16:17:33.843 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 11ms
+16:18:30.914 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 20
+16:18:33.846 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+16:19:33.859 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 13ms
+16:20:33.869 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 9ms
+16:21:33.877 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+16:22:33.878 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+16:23:31.079 [Eureka-PeerNodesUpdater] WARN  c.n.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+16:23:33.885 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 6ms
+16:24:33.897 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
+16:25:33.912 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 13ms
+16:26:33.914 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+16:27:33.915 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+16:27:58.651 [http-nio-8761-exec-3] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance BOOKING-SERVICE/LIN-33BP8G3.corp.capgemini.com:BOOKING-SERVICE:8083 with status DOWN (replication=false)
+16:28:00.237 [http-nio-8761-exec-4] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance BOOKING-SERVICE/LIN-33BP8G3.corp.capgemini.com:BOOKING-SERVICE:8083 with status UP (replication=false)
+16:28:14.532 [http-nio-8761-exec-4] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-SERVICE/LIN-33BP8G3.corp.capgemini.com:FLIGHT-SERVICE:8082 with status DOWN (replication=false)
+16:28:19.325 [http-nio-8761-exec-7] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-SERVICE/LIN-33BP8G3.corp.capgemini.com:FLIGHT-SERVICE:8082 with status UP (replication=false)
+16:28:33.918 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 3ms
+16:28:37.005 [http-nio-8761-exec-5] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEARCH-SERVICE/LIN-33BP8G3.corp.capgemini.com:SEARCH-SERVICE:8081 with status DOWN (replication=false)
+16:28:41.728 [http-nio-8761-exec-8] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEARCH-SERVICE/LIN-33BP8G3.corp.capgemini.com:SEARCH-SERVICE:8081 with status UP (replication=false)
+16:28:55.538 [http-nio-8761-exec-4] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance WEBCHECKIN-SERVICE/LIN-33BP8G3.corp.capgemini.com:WEBCHECKIN-SERVICE:8086 with status DOWN (replication=false)
+16:28:55.558 [http-nio-8761-exec-8] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance BOOKING-SERVICE/LIN-33BP8G3.corp.capgemini.com:BOOKING-SERVICE:8083 with status DOWN (replication=false)
+16:28:57.063 [http-nio-8761-exec-7] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance WEBCHECKIN-SERVICE/LIN-33BP8G3.corp.capgemini.com:WEBCHECKIN-SERVICE:8086 with status UP (replication=false)
+16:29:00.270 [http-nio-8761-exec-11] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance BOOKING-SERVICE/LIN-33BP8G3.corp.capgemini.com:BOOKING-SERVICE:8083 with status UP (replication=false)
+16:29:03.573 [http-nio-8761-exec-6] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-GATEWAY/LIN-33BP8G3.corp.capgemini.com:FLIGHT-GATEWAY:8085 with status DOWN (replication=false)
+16:29:28.604 [http-nio-8761-exec-8] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-GATEWAY/LIN-33BP8G3.corp.capgemini.com:FLIGHT-GATEWAY:8085 with status UP (replication=false)
+16:29:33.341 [http-nio-8761-exec-7] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance BOOKING-SERVICE/LIN-33BP8G3.corp.capgemini.com:BOOKING-SERVICE:8083 with status DOWN (replication=false)
+16:29:33.919 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+16:29:44.078 [http-nio-8761-exec-8] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance BOOKING-SERVICE/LIN-33BP8G3.corp.capgemini.com:BOOKING-SERVICE:8083 with status UP (replication=false)
+16:29:51.745 [http-nio-8761-exec-11] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance WEBCHECKIN-SERVICE/LIN-33BP8G3.corp.capgemini.com:WEBCHECKIN-SERVICE:8086 with status DOWN (replication=false)
+16:29:58.885 [http-nio-8761-exec-7] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance WEBCHECKIN-SERVICE/LIN-33BP8G3.corp.capgemini.com:WEBCHECKIN-SERVICE:8086 with status UP (replication=false)
+16:30:10.140 [http-nio-8761-exec-6] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEATNFARE-SERVICE/LIN-33BP8G3.corp.capgemini.com:SEATNFARE-SERVICE:8087 with status DOWN (replication=false)
+16:30:15.235 [http-nio-8761-exec-7] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEATNFARE-SERVICE/LIN-33BP8G3.corp.capgemini.com:SEATNFARE-SERVICE:8087 with status UP (replication=false)
+16:30:21.843 [http-nio-8761-exec-4] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEARCH-SERVICE/LIN-33BP8G3.corp.capgemini.com:SEARCH-SERVICE:8081 with status DOWN (replication=false)
+16:30:33.666 [http-nio-8761-exec-3] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEARCH-SERVICE/LIN-33BP8G3.corp.capgemini.com:SEARCH-SERVICE:8081 with status UP (replication=false)
+16:30:33.920 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+16:30:44.993 [http-nio-8761-exec-4] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-SECURITY/localhost:FLIGHT-SECURITY:8088 with status DOWN (replication=false)
+16:31:00.210 [http-nio-8761-exec-10] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-SECURITY/LIN-33BP8G3.corp.capgemini.com:FLIGHT-SECURITY:8088 with status UP (replication=false)
+16:31:04.900 [http-nio-8761-exec-7] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-SERVICE/LIN-33BP8G3.corp.capgemini.com:FLIGHT-SERVICE:8082 with status DOWN (replication=false)
+16:31:16.927 [http-nio-8761-exec-2] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-SERVICE/LIN-33BP8G3.corp.capgemini.com:FLIGHT-SERVICE:8082 with status UP (replication=false)
+16:31:22.293 [http-nio-8761-exec-7] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEATNFARE-SERVICE/LIN-33BP8G3.corp.capgemini.com:SEATNFARE-SERVICE:8087 with status DOWN (replication=false)
+16:31:33.922 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+16:31:34.455 [http-nio-8761-exec-3] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEATNFARE-SERVICE/LIN-33BP8G3.corp.capgemini.com:SEATNFARE-SERVICE:8087 with status UP (replication=false)
+16:31:38.257 [http-nio-8761-exec-6] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance EXTERNAL-CONFIG/LIN-33BP8G3.corp.capgemini.com:EXTERNAL-CONFIG:8084 with status DOWN (replication=false)
+16:31:47.108 [http-nio-8761-exec-7] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance EXTERNAL-CONFIG/LIN-33BP8G3.corp.capgemini.com:EXTERNAL-CONFIG:8084 with status UP (replication=false)
+16:31:52.231 [RMI TCP Connection(644)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+16:31:52.234 [RMI TCP Connection(644)-127.0.0.1] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Unregistering application FLIGHTSYSTEMREGISTER with eureka with status DOWN
+16:31:52.242 [RMI TCP Connection(644)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8761"]
+16:31:52.259 [RMI TCP Connection(644)-127.0.0.1] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Shutting down Eureka Server..
+16:31:52.263 [RMI TCP Connection(644)-127.0.0.1] INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+16:31:52.274 [RMI TCP Connection(644)-127.0.0.1] INFO  c.n.e.DefaultEurekaServerContext - Shut down
+16:31:52.274 [RMI TCP Connection(644)-127.0.0.1] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Eureka Service is now shutdown...
+16:31:52.275 [RMI TCP Connection(644)-127.0.0.1] INFO  c.n.e.DefaultEurekaServerContext - Shutting down ...
+16:31:52.280 [RMI TCP Connection(644)-127.0.0.1] INFO  c.n.e.DefaultEurekaServerContext - Shut down
+16:31:52.285 [RMI TCP Connection(644)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+16:31:52.287 [RMI TCP Connection(644)-127.0.0.1] INFO  c.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+16:31:55.513 [restartedMain] INFO  c.f.r.FlightsystemregisterApplication - Starting FlightsystemregisterApplication using Java 17.0.10 with PID 18044 (C:\Case Study\flightsystemregister\target\classes started by slamkane in C:\Case Study\flightsystemregister)
+16:31:55.516 [restartedMain] INFO  c.f.r.FlightsystemregisterApplication - No active profile set, falling back to 1 default profile: "default"
+16:31:55.564 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+16:31:55.564 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+16:31:56.411 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=3432e653-7d0b-3fa2-a39b-97e56b360824
+16:31:56.449 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+16:31:56.451 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+16:31:56.729 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8761 (http)
+16:31:56.737 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8761"]
+16:31:56.738 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+16:31:56.739 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+16:31:56.795 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:31:56.795 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1230 ms
+16:31:57.494 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+16:31:57.496 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+16:31:57.635 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+16:31:57.635 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+16:31:58.350 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+16:31:58.484 [restartedMain] WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger - Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+16:31:58.500 [restartedMain] INFO  o.s.c.n.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+16:31:58.523 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+16:31:58.523 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+16:31:58.529 [restartedMain] INFO  c.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1715079718529 with initial instances count: 0
+16:31:58.561 [restartedMain] INFO  c.n.e.DefaultEurekaServerContext - Initializing ...
+16:31:58.563 [restartedMain] INFO  c.n.eureka.cluster.PeerEurekaNodes - Adding new peer nodes [http://localhost:8761/eureka/]
+16:31:58.660 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+16:31:58.660 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+16:31:58.660 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+16:31:58.660 [restartedMain] INFO  c.n.d.p.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+16:31:58.708 [restartedMain] INFO  c.n.eureka.cluster.PeerEurekaNodes - Replica node URL:  http://localhost:8761/eureka/
+16:31:58.715 [restartedMain] INFO  c.n.e.r.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+16:31:58.716 [restartedMain] INFO  c.n.e.DefaultEurekaServerContext - Initialized
+16:31:58.722 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+16:31:58.779 [restartedMain] INFO  o.s.c.n.e.s.EurekaServiceRegistry - Registering application FLIGHTSYSTEMREGISTER with eureka with status UP
+16:31:58.781 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8761"]
+16:31:58.789 [Thread-15] INFO  o.s.c.n.e.s.EurekaServerBootstrap - isAws returned false
+16:31:58.789 [Thread-15] INFO  o.s.c.n.e.s.EurekaServerBootstrap - Initialized server context
+16:31:58.789 [Thread-15] INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+16:31:58.790 [Thread-15] INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+16:31:58.790 [Thread-15] INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Changing status to UP
+16:31:58.796 [Thread-15] INFO  o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+16:31:58.804 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8761 (http) with context path ''
+16:31:58.806 [restartedMain] INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 8761
+16:31:58.927 [restartedMain] INFO  c.f.r.FlightsystemregisterApplication - Started FlightsystemregisterApplication in 3.887 seconds (process running for 4.792)
+16:31:58.974 [http-nio-8761-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+16:31:58.974 [http-nio-8761-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+16:31:58.975 [http-nio-8761-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+16:31:59.030 [http-nio-8761-exec-2] WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: WEBCHECKIN-SERVICE - LIN-33BP8G3.corp.capgemini.com:WEBCHECKIN-SERVICE:8086
+16:31:59.031 [http-nio-8761-exec-2] WARN  c.n.e.resources.InstanceResource - Not Found (Renew): WEBCHECKIN-SERVICE - LIN-33BP8G3.corp.capgemini.com:WEBCHECKIN-SERVICE:8086
+16:31:59.157 [http-nio-8761-exec-4] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance WEBCHECKIN-SERVICE/LIN-33BP8G3.corp.capgemini.com:WEBCHECKIN-SERVICE:8086 with status UP (replication=false)
+16:31:59.777 [http-nio-8761-exec-5] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance WEBCHECKIN-SERVICE/LIN-33BP8G3.corp.capgemini.com:WEBCHECKIN-SERVICE:8086 with status UP (replication=true)
+16:32:00.209 [http-nio-8761-exec-6] WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: FLIGHT-SECURITY - LIN-33BP8G3.corp.capgemini.com:FLIGHT-SECURITY:8088
+16:32:00.210 [http-nio-8761-exec-6] WARN  c.n.e.resources.InstanceResource - Not Found (Renew): FLIGHT-SECURITY - LIN-33BP8G3.corp.capgemini.com:FLIGHT-SECURITY:8088
+16:32:00.225 [http-nio-8761-exec-9] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-SECURITY/LIN-33BP8G3.corp.capgemini.com:FLIGHT-SECURITY:8088 with status UP (replication=false)
+16:32:00.233 [http-nio-8761-exec-10] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-SECURITY/LIN-33BP8G3.corp.capgemini.com:FLIGHT-SECURITY:8088 with status UP (replication=false)
+16:32:00.745 [http-nio-8761-exec-1] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-SECURITY/LIN-33BP8G3.corp.capgemini.com:FLIGHT-SECURITY:8088 with status UP (replication=true)
+16:32:03.696 [http-nio-8761-exec-3] WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: SEARCH-SERVICE - LIN-33BP8G3.corp.capgemini.com:SEARCH-SERVICE:8081
+16:32:03.697 [http-nio-8761-exec-3] WARN  c.n.e.resources.InstanceResource - Not Found (Renew): SEARCH-SERVICE - LIN-33BP8G3.corp.capgemini.com:SEARCH-SERVICE:8081
+16:32:03.711 [http-nio-8761-exec-4] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEARCH-SERVICE/LIN-33BP8G3.corp.capgemini.com:SEARCH-SERVICE:8081 with status UP (replication=false)
+16:32:04.222 [http-nio-8761-exec-7] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEARCH-SERVICE/LIN-33BP8G3.corp.capgemini.com:SEARCH-SERVICE:8081 with status UP (replication=true)
+16:32:04.431 [http-nio-8761-exec-9] WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: SEATNFARE-SERVICE - LIN-33BP8G3.corp.capgemini.com:SEATNFARE-SERVICE:8087
+16:32:04.431 [http-nio-8761-exec-9] WARN  c.n.e.resources.InstanceResource - Not Found (Renew): SEATNFARE-SERVICE - LIN-33BP8G3.corp.capgemini.com:SEATNFARE-SERVICE:8087
+16:32:04.439 [http-nio-8761-exec-10] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEATNFARE-SERVICE/LIN-33BP8G3.corp.capgemini.com:SEATNFARE-SERVICE:8087 with status UP (replication=false)
+16:32:04.943 [http-nio-8761-exec-1] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance SEATNFARE-SERVICE/LIN-33BP8G3.corp.capgemini.com:SEATNFARE-SERVICE:8087 with status UP (replication=true)
+16:32:14.139 [http-nio-8761-exec-2] WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: BOOKING-SERVICE - LIN-33BP8G3.corp.capgemini.com:BOOKING-SERVICE:8083
+16:32:14.139 [http-nio-8761-exec-2] WARN  c.n.e.resources.InstanceResource - Not Found (Renew): BOOKING-SERVICE - LIN-33BP8G3.corp.capgemini.com:BOOKING-SERVICE:8083
+16:32:14.147 [http-nio-8761-exec-4] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance BOOKING-SERVICE/LIN-33BP8G3.corp.capgemini.com:BOOKING-SERVICE:8083 with status UP (replication=false)
+16:32:14.679 [http-nio-8761-exec-7] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance BOOKING-SERVICE/LIN-33BP8G3.corp.capgemini.com:BOOKING-SERVICE:8083 with status UP (replication=true)
+16:32:16.911 [http-nio-8761-exec-8] WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: FLIGHT-SERVICE - LIN-33BP8G3.corp.capgemini.com:FLIGHT-SERVICE:8082
+16:32:16.912 [http-nio-8761-exec-8] WARN  c.n.e.resources.InstanceResource - Not Found (Renew): FLIGHT-SERVICE - LIN-33BP8G3.corp.capgemini.com:FLIGHT-SERVICE:8082
+16:32:16.921 [http-nio-8761-exec-10] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-SERVICE/LIN-33BP8G3.corp.capgemini.com:FLIGHT-SERVICE:8082 with status UP (replication=false)
+16:32:17.090 [http-nio-8761-exec-2] WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: EXTERNAL-CONFIG - LIN-33BP8G3.corp.capgemini.com:EXTERNAL-CONFIG:8084
+16:32:17.090 [http-nio-8761-exec-2] WARN  c.n.e.resources.InstanceResource - Not Found (Renew): EXTERNAL-CONFIG - LIN-33BP8G3.corp.capgemini.com:EXTERNAL-CONFIG:8084
+16:32:17.097 [http-nio-8761-exec-5] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance EXTERNAL-CONFIG/LIN-33BP8G3.corp.capgemini.com:EXTERNAL-CONFIG:8084 with status UP (replication=false)
+16:32:17.440 [http-nio-8761-exec-4] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-SERVICE/LIN-33BP8G3.corp.capgemini.com:FLIGHT-SERVICE:8082 with status UP (replication=true)
+16:32:17.440 [http-nio-8761-exec-4] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance EXTERNAL-CONFIG/LIN-33BP8G3.corp.capgemini.com:EXTERNAL-CONFIG:8084 with status UP (replication=true)
+16:32:28.707 [http-nio-8761-exec-7] WARN  c.n.e.r.AbstractInstanceRegistry - DS: Registry: lease doesn't exist, registering resource: FLIGHT-GATEWAY - LIN-33BP8G3.corp.capgemini.com:FLIGHT-GATEWAY:8085
+16:32:28.707 [http-nio-8761-exec-7] WARN  c.n.e.resources.InstanceResource - Not Found (Renew): FLIGHT-GATEWAY - LIN-33BP8G3.corp.capgemini.com:FLIGHT-GATEWAY:8085
+16:32:28.716 [http-nio-8761-exec-6] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-GATEWAY/LIN-33BP8G3.corp.capgemini.com:FLIGHT-GATEWAY:8085 with status UP (replication=false)
+16:32:29.247 [http-nio-8761-exec-3] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-GATEWAY/LIN-33BP8G3.corp.capgemini.com:FLIGHT-GATEWAY:8085 with status UP (replication=true)
+16:32:58.791 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+16:33:58.801 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
+16:34:58.816 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 14ms
+16:35:58.820 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 4ms
+16:36:12.388 [http-nio-8761-exec-3] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-GATEWAY/LIN-33BP8G3.corp.capgemini.com:FLIGHT-GATEWAY:8085 with status DOWN (replication=false)
+16:36:12.897 [http-nio-8761-exec-10] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-GATEWAY/LIN-33BP8G3.corp.capgemini.com:FLIGHT-GATEWAY:8085 with status DOWN (replication=true)
+16:36:39.591 [http-nio-8761-exec-7] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-GATEWAY/LIN-33BP8G3.corp.capgemini.com:FLIGHT-GATEWAY:8085 with status UP (replication=false)
+16:36:40.097 [http-nio-8761-exec-2] INFO  c.n.e.r.AbstractInstanceRegistry - Registered instance FLIGHT-GATEWAY/LIN-33BP8G3.corp.capgemini.com:FLIGHT-GATEWAY:8085 with status UP (replication=true)
+16:36:58.822 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+16:37:58.834 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 12ms
+16:38:58.838 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 4ms
+16:39:58.840 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+16:40:58.853 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 13ms
+16:41:58.862 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+16:42:58.871 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 9ms
+16:43:58.873 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+16:44:58.888 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 14ms
+16:45:58.891 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 3ms
+16:46:58.716 [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO  c.n.e.r.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 15
+16:46:58.900 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+16:47:58.902 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+16:48:58.903 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+16:49:58.904 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+16:50:58.909 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 5ms
+16:51:58.918 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+16:52:58.919 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+16:53:58.922 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+16:54:58.923 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+16:55:58.934 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 10ms
+16:56:58.942 [Eureka-EvictionTimer] INFO  c.n.e.r.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms

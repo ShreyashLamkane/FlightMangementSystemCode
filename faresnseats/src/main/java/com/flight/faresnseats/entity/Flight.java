@@ -2,6 +2,7 @@ package com.flight.faresnseats.entity;
 
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -29,7 +30,8 @@ public class Flight {
 	private String source;
 	private String destination;
 	private LocalDate departureDate;
-    private String departureTime;
+    private LocalTime departureTime;
+    private LocalTime arrivalTime;
     private int numRows;
     private int seatsPerRow;
 	private Integer fare;

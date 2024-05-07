@@ -82,7 +82,6 @@ INDEX VERSION 1.134+C:\Case Study\.metadata\.plugins\org.eclipse.jdt.core
 1957086773.index
 3458676610.index
 1755197560.index
-335586186.index
 4116461566.index
 1685597921.index
 1756908828.index

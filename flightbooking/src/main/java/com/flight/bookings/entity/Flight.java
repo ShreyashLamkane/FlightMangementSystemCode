@@ -2,7 +2,7 @@ package com.flight.bookings.entity;
 
 
 import java.time.LocalDate;
-
+import java.time.LocalTime;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,7 +22,8 @@ public class Flight {
 	private String source;
 	private String destination;
 	private LocalDate departureDate;
-    private String departureTime;
+    private LocalTime departureTime;
+    private LocalTime arrivalTime;
     private int numRows;
     private int seatsPerRow;
 	private Integer fare;
