@@ -80,8 +80,5 @@ public class DetailsController {
 		return flightDetailsUtil.getFlightById(flightId);
 	}
 	
-//	public Integer getFareByID(@PathVariable Integer flightId) {
-//		
-//		return 
-//	}
+
 }

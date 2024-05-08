@@ -68,7 +68,10 @@ public class AuthenticationFilter extends AbstractGatewayFilterFactory<Authentic
 							return chain.filter(exchange);
 						} else if (path.startsWith("/web")) {
 							return chain.filter(exchange);
-						} else {
+						} else if (path.startsWith("/payment")) {
+							return chain.filter(exchange);
+						}
+						else {
 							throw new RuntimeException();
 						}
 

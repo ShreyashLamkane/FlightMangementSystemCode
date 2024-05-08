@@ -1,5 +1,13 @@
 server:
   port: 8085
+  servlet:
+   context-path: /
+  
+openapi:
+ service:
+   title: API Gateway doc #title that you will want to display in the swagger ui
+   url: http://localhost:8085 #api gateway url
+   
 spring:
   cloud:
     discovery:
@@ -54,6 +62,13 @@ spring:
           uri: lb://FLIGHT-SECURITY
           predicates:
             - Path=/auth/**
+          filters:
+            - AuthenticationFilter
+            
+        - id: RAZORPAY-SERVICE
+          uri: lb://RAZORPAY-SERVICE
+          predicates:
+            - Path=/payment/**
           filters:
             - AuthenticationFilter
             

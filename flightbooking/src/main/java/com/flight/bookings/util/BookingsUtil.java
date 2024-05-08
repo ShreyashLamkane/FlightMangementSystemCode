@@ -6,4 +6,5 @@ public interface BookingsUtil {
 	Bookings createBookings(Bookings bookings) ;
 	void  removeById(String bookingId);
 	Bookings getById(String bookingId);
+	public void createTransaction(Integer amount);
 }

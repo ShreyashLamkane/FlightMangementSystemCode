@@ -63,7 +63,7 @@ public class WebCheckInUtilTest {
     @Test
     public void testSeatAllocation() {
         // Mocking data
-        String bookingId = "6634c98855e327057edccab2";
+        String bookingId = "663b309813b879608f220f3f";
         Bookings booking = new Bookings();
         booking.setBookingId(bookingId);
         booking.setFlightId(8);
@@ -80,7 +80,13 @@ public class WebCheckInUtilTest {
         when(seatService.addSeat(any(Seat.class))).thenReturn(new Seat());
         
         
-        webCheckInUtil.seatAllocation(bookingId);
+       System.out.println( webCheckInUtil.seatAllocation(bookingId));
+        
+        Bookings booking1=bookingService.getBookingById(bookingId);
+        assertEquals(booking,booking1);
+        
+        
+        
         
        
     }

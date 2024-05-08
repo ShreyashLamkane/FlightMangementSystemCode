@@ -51,9 +51,6 @@ public class WebCheckInController {
 		return webCheckInUtil.getSeatByBookingId(bookingId);
 	}
 	
-//	@PutMapping("/undoSeats/{passengerId}")
-//	public ResponseEntity changeToAvailable(@PathVariable String passengerId) {
-//		
-//	}
+
 }
 	

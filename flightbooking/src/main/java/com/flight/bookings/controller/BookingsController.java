@@ -59,5 +59,10 @@ public class BookingsController {
 		Bookings booked = bookingsUtil.getById(bookingId);
 		return booked;
 	}
+	
+	@GetMapping("/payment/{amount}")
+	public void createTransaction(@PathVariable Integer amount) {
+		bookingsUtil.createTransaction(amount);
+	}
 
 }

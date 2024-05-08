@@ -31,6 +31,7 @@ public class Bookings {
 	private String seatClass;
 	private int totalFare;
 	private Flight flight;
+	private TransactionDetails transactionDetails;
 	
 	
 	
