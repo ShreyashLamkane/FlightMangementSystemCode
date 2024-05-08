@@ -9,19 +9,19 @@ import com.flight.faresnseats.entity.FareNSeats;
 import com.flight.faresnseats.repository.FareNSeatsRepository;
 
 @Service
-public class FaresNSeatsServiceImpl implements  FaresNSeatsService{
-	
+public class FaresNSeatsServiceImpl implements FaresNSeatsService {
+
 	@Autowired
 	private FareNSeatsRepository fareNSeatsRepository;
-	
+
 	@Override
 	public FareNSeats setFareNSeats(FareNSeats fareNSeats) {
 		// TODO Auto-generated method stub
 		return fareNSeatsRepository.save(fareNSeats);
 	}
-	
-	public List<FareNSeats> setAllFareNSeats(List<FareNSeats> list){
-		
+
+	public List<FareNSeats> setAllFareNSeats(List<FareNSeats> list) {
+
 		return fareNSeatsRepository.saveAll(list);
 	}
 
@@ -40,8 +40,8 @@ public class FaresNSeatsServiceImpl implements  FaresNSeatsService{
 	@Override
 	public void changeAvailability(Integer flightId, String seatNo) {
 		// TODO Auto-generated method stub
-		
-		FareNSeats seat= fareNSeatsRepository.findByFlightIdAndSeatNumber(flightId, seatNo);
+
+		FareNSeats seat = fareNSeatsRepository.findByFlightIdAndSeatNumber(flightId, seatNo);
 		seat.setAvailable(false);
 		fareNSeatsRepository.save(seat);
 	}

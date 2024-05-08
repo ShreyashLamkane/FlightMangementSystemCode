@@ -11,13 +11,13 @@ import lombok.NoArgsConstructor;
 @Data
 @Entity
 public class FareNSeats {
-	
-		@Id
-	    @GeneratedValue(strategy = GenerationType.IDENTITY)
-	    private Integer id;
-	    private String seatNumber; // Format like "26B"
-	    private String seatClass;
-	    private double fare;
-	    private boolean available;
-	    private Integer flightId; // To link the seat to a specific flight
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer id;
+	private String seatNumber; // Format like "26B"
+	private String seatClass;
+	private double fare;
+	private boolean available;
+	private Integer flightId; // To link the seat to a specific flight
 }

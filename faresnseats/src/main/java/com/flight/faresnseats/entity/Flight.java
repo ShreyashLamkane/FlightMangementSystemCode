@@ -1,6 +1,5 @@
 package com.flight.faresnseats.entity;
 
-
 import java.time.LocalDate;
 import java.time.LocalTime;
 
@@ -19,23 +18,20 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="flight")
+@Table(name = "flight")
 public class Flight {
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer flightId;
-	
-	
+
 	private String flightNumber;
 	private String source;
 	private String destination;
 	private LocalDate departureDate;
-    private LocalTime departureTime;
-    private LocalTime arrivalTime;
-    private int numRows;
-    private int seatsPerRow;
+	private LocalTime departureTime;
+	private LocalTime arrivalTime;
+	private int numRows;
+	private int seatsPerRow;
 	private Integer fare;
-	
-	
-	
+
 }

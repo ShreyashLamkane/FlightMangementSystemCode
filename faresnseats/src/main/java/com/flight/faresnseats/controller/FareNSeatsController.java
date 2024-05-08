@@ -20,37 +20,36 @@ import com.flight.faresnseats.util.FaresNSeatsUtil;
 @RestController
 @RequestMapping("/seats")
 public class FareNSeatsController {
-	
+
 	private static final Logger logger = LoggerFactory.getLogger(FareNSeatsController.class);
 
-	
 	@Autowired
 	private FaresNSeatsUtil faresNSeatsUtil;
+
 	@PostMapping("/{flightId}")
-	public ResponseEntity setSeatsNFare(@PathVariable Integer flightId ) {
-		
+	public ResponseEntity setSeatsNFare(@PathVariable Integer flightId) {
+
 		logger.info("Setting seats and fare for flight with ID: {}", flightId);
 		return ResponseEntity.ok(faresNSeatsUtil.createFareNSeats(flightId));
 	}
-	
+
 	@GetMapping("/fare/{flightId}")
 	public Integer getFareByFlightIdAndClass(@PathVariable Integer flightId, @RequestParam String seatClass) {
-		 logger.info("Fetching fare for flight with ID: {} and seat class: {}", flightId, seatClass);
+		logger.info("Fetching fare for flight with ID: {} and seat class: {}", flightId, seatClass);
 		return faresNSeatsUtil.getFareByFlightIdAndClass(flightId, seatClass);
 	}
-	
+
 	@GetMapping("/getAvailable/{flightId}")
-	public List<FareNSeats> getAvailableSeats(@PathVariable Integer flightId, @RequestParam String seatClass ){
-		
+	public List<FareNSeats> getAvailableSeats(@PathVariable Integer flightId, @RequestParam String seatClass) {
+
 		return faresNSeatsUtil.getAvailableSeats(flightId, seatClass);
 	}
-	
+
 	@PostMapping("/change/{flightId}/{seatNumber}")
 	public ResponseEntity<?> changeAvailability(@PathVariable Integer flightId, @PathVariable String seatNumber) {
 		logger.info("Changing availability of seat {} for flight with ID: {}", seatNumber, flightId);
 		faresNSeatsUtil.changeAvailability(flightId, seatNumber);
 		return new ResponseEntity(HttpStatus.ACCEPTED);
 	}
-	
 
 }
